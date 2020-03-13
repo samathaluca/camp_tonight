@@ -18,7 +18,8 @@ from django.urls import path
 from perfect_spot import views
 
 urlpatterns = [
-    path('', views.home),
+    path('', views.home, name='home'),
     path('password', views.password),
+    path('about', views.about, name='about'),
 
 ]
